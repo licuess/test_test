@@ -1,9 +1,9 @@
-from requests import request
+from urllib.request import urlopen
+
 import re
 
-info = request("GET", url="http://ip.42.pl/raw")
-print(info.content)
-# info = request("GET", url="http://myip.ipip.net")
-# info = request("GET", url="http://ipinfo.io/ip")
-ip_addr = re.findall(r'\d+.\d+.\d+.\d+.', info.text)
-print(ip_addr)
+"""获取公网IP地址"""
+urls = ["http://ip.42.pl/raw", "http://myip.ipip.net", "http://ipinfo.io/ip"]
+ip_addrs = [re.findall(r'\d+.\d+.\d+.\d+.', res.read().decode('utf-8')) for res in map(urlopen, urls) if
+            res.getcode() == 200]
+
