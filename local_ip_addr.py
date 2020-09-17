@@ -1,8 +1,6 @@
 import socket
 
 # host_name
-
-
 print(socket.gethostname())
 
 # local_host_ip
