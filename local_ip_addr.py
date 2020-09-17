@@ -1,5 +1,4 @@
 import socket
-from urllib.request import urlopen
 
 # host_name
 
@@ -12,4 +11,3 @@ print(socket.gethostbyname(socket.gethostname()))
 # addr_info
 addr_info = socket.getaddrinfo(socket.gethostname(), None)
 print(addr_info)
-
