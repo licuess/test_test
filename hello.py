@@ -11,6 +11,7 @@ for item1, item2, item3 in product(list1, list2, list3):
 
 @atexit.register
 def clean():
+    """注册程序结束后运行函数clean"""
     print("清理任务")
     
 
