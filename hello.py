@@ -1,3 +1,5 @@
+﻿# -*-coding:utf-8-*- 
+
 import atexit
 from itertools import product
 
