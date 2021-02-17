@@ -1,3 +1,5 @@
+﻿# -*-coding:utf-8-*- 
+
 import atexit
 from itertools import product
 
@@ -17,6 +19,6 @@ def clean():
 
 def main():
     print("hello world!")
-    
+
 
 main()
