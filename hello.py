@@ -20,7 +20,7 @@ def clean():
 
 @atexit.register
 def world():
-	print(time.times())
+	print(time.time())
 	print("world")
 
 
@@ -28,7 +28,7 @@ def main():
 	clean()
 	world()
 	print("hello world!")
-	rangefunc()
+	range_func()
 
 
 if __name__ == "__main__":
